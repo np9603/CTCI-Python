@@ -24,31 +24,3 @@ def rotateMatrix(matrix):
 print(rotateMatrix(matrix))
 print()
 print(rotateMatrix(matrix2))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print()
-
-def rotateMatrix2(matrix):
-
-    n=len(matrix)
-    print(matrix)
-    for i in range(n-1,-1,-1):
-        for j in range(n-1,i,-1):
-            matrix[j][i] , matrix[i][j] = matrix[i][j] , matrix[j][i]
-
-    print(matrix)
-
-print(rotateMatrix2(matrix))
